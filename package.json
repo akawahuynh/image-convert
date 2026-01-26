@@ -5,7 +5,8 @@
   "private": true,
   "scripts": {
     "dev": "bun run --watch src/index.ts",
-    "build": "bun build --compile --minify --external sharp --outfile server src/index.ts"
+    "build": "bun build --minify --outdir dist --target bun src/index.ts",
+    "start": "bun run dist/index.js"
   },
   "devDependencies": {
     "@types/bun": "latest"
