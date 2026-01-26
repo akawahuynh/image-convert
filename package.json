@@ -1,0 +1,23 @@
+{
+  "name": "image-convert",
+  "module": "src/index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "bun run --watch src/index.ts",
+    "build": "bun build --compile --minify --outfile server src/index.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "h3": "^2.0.1-rc.11",
+    "ipx": "^3.1.1"
+  },
+  "trustedDependencies": [
+    "@parcel/watcher"
+  ]
+}
