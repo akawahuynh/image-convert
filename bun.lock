@@ -18,6 +18,7 @@
     },
   },
   "trustedDependencies": [
+    "sharp",
     "@parcel/watcher",
   ],
   "packages": {

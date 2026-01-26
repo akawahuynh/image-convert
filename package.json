@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "dev": "bun run --watch src/index.ts",
-    "build": "bun build --compile --minify --outfile server src/index.ts"
+    "build": "bun build --compile --minify --external sharp --outfile server src/index.ts"
   },
   "devDependencies": {
     "@types/bun": "latest"
@@ -19,6 +19,7 @@
     "sharp": "^0.34.5"
   },
   "trustedDependencies": [
-    "@parcel/watcher"
+    "@parcel/watcher",
+    "sharp"
   ]
 }
