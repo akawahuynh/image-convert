@@ -10,7 +10,7 @@ WORKDIR /app
 # Install dependencies based on the preferred package manager
 COPY package.json ./
 COPY bun.lock ./
-RUN bun install --frozen-lockfile
+RUN bun install 
 
 
 # Rebuild the source code only when needed
